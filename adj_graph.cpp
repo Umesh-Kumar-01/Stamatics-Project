@@ -50,17 +50,15 @@ void adj_graph ::add_edge(edge &e){
 // driver code 
 int main(int argc, char const *argv[])
 {
-    vector<edge> edges = {
-        {0, 1, 6}, {1, 2, 7}, {2, 0, 5}, {2, 1, 4}, {3, 2, 10}, {5, 4, 1}, {4, 5, 3}
-    };
-    // int vertices,edge_no;
-    // cin>>vertices>>edge_no;
-    // for (int i = 0; i < edge_no; i++)
-    // {
-    //     int s,e,w;
-    //     cin>>s>>e>>w;
-    //     edges.push_back({s,e,w});
-    // }
+    vector<edge> edges;
+    int vertices,edge_no;
+    cin>>vertices>>edge_no;
+    for (int i = 0; i < edge_no; i++)
+    {
+        int s,e,w;
+        cin>>s>>e>>w;
+        edges.push_back({s,e,w});
+    }
 
 
     adj_graph grp(edges,6);

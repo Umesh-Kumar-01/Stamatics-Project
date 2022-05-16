@@ -2,17 +2,18 @@
 #include <vector>
 
 using namespace std;
-
 const int N = 1e5+10;
-bool vis[N];
 vector<int> v1[N];
-void dfs(int vertex){
+bool vis[N];
+
+vector<vector<int> > connected_components;
+void dfs(int vertex,vector<int> &temp){
     vis[vertex] = true;
-    // cout<<vertex<<" ";
+    temp.push_back(vertex);
     for (auto child:v1[vertex])
     {
         if(vis[child]) continue;
-        dfs(child);
+        dfs(child,temp);
     }
 }
 int main(int argc, char const *argv[])
@@ -26,6 +27,15 @@ int main(int argc, char const *argv[])
         v1[x].push_back(y);
         v1[y].push_back(x);
     }
-    dfs(2);
+    int conected_comp =0;
+    for (int i = 0; i < n; i++)
+    {
+        vector<int> temp;
+        if(vis[i]) continue;
+        dfs(i,temp);
+        conected_comp++;
+        connected_components.push_back(temp);
+        temp.clear();
+    }
     return 0;
 }
