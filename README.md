@@ -2,14 +2,20 @@
 
 As the name suggests, this project is related to Graph Data Structure. It helps to master the basics of complicated graph-related algorithms. This repository contains two folders. The first one has all the assignments, and the second one includes the implementation / Codes of concepts learned throughout the project. 
 
-
 ### Topics covered in this project:-
- Graph Representation in C++
+- Graph Representation in C++
 - Graph Traversal (DFS/BFS)
 - Find Connected components in a graph
 - Finding Cycles in a forest (Graph)
 - Finding Bridges in a graph 
-- Types of Edges (Back Edge, Tree Edge, and Cross Edge )
+- Types of Edges (Back Edge, Tree Edge, Forward Edge and Cross Edge )
+- Topological Ordering
+    - Kahn's Algorithm and a dfs based Algorithm for finding topological Ordering 
+- Strongly Connected Components 
+    - Kosaraju's Algorithm
+    - Tarjan's Algorithm 
+    - Application : 2SAT
+- Euler Path 
 - __ Project is continue__
 
  ### Contact:-
