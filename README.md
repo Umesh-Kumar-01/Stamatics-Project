@@ -10,7 +10,8 @@ As the name suggests, this project is related to Graph Data Structure. It helps 
 - Finding Bridges in a graph 
 - Types of Edges (Back Edge, Tree Edge, Forward Edge and Cross Edge )
 - Topological Ordering
-    - Kahn's Algorithm and a dfs based Algorithm for finding topological Ordering 
+    - Kahn's Algorithm based on BFS
+    - A DFS based Algorithm for finding topological Ordering 
 - Strongly Connected Components 
     - Kosaraju's Algorithm
     - Tarjan's Algorithm 
