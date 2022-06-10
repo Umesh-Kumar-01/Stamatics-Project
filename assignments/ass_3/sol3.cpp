@@ -43,17 +43,23 @@ int main(int argc, char const *argv[])
     int n,m;
     cin>>n>>m;
     dsu ans(n);
-    vector<pair<int,pair<int,int> > >edges(m);
+    vector<pair<int,pair<int,int> > >edges;
     for (int i = 0; i < m; i++)
     {
-        cin>>edges[i].second.first>>edges[i].second.second>>edges[i].first;
+        int u,v,w;
+        cin>>u>>v>>w;
+        edges.push_back({w,{u,v}});
     }
     sort(edges.begin(),edges.end());
 
     int min_cost =0;
     for(auto x:edges){
-        if(ans.find_parent(x.second.first-1)==ans.find_parent(x.second.second-1)) continue;
-        ans.union_sets(x.second.first-1,x.second.second-1);
+        int wt = x.first;
+        int u = x.second.first;
+        int v = x.second.second;
+        u--,v--;
+        if(ans.find_parent(u)==ans.find_parent(v)) continue;
+        ans.union_sets(u,v);
         min_cost += x.first;
     }
     cout<<min_cost<<"\n";
