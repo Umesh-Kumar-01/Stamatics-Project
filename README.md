@@ -16,7 +16,10 @@ As the name suggests, this project is related to Graph Data Structure. It helps 
     - Kosaraju's Algorithm
     - Tarjan's Algorithm 
     - Application : 2SAT
-- Euler Path 
+- Euler Path
+- Disjoint Set Union
+- Various Graph Algorithms using DSU
+- Binary Indexed Tree / Fenwick Tree
 - __ Project is continue__
 
  ### Contact:-
