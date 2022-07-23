@@ -20,7 +20,6 @@ As the name suggests, this project is related to Graph Data Structure. It helps 
 - Disjoint Set Union
 - Various Graph Algorithms using DSU
 - Binary Indexed Tree / Fenwick Tree
-- __ Project is continue__
 
  ### Contact:-
  Umesh Kumar: umeshkumar.jdh2020@gmail.com  
